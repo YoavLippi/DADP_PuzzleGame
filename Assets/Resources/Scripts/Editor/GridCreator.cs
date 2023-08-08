@@ -83,14 +83,14 @@ public class GridCreator : EditorWindow
             //placing nodes for intersections
             for (int j = 0; j <= columns; j++)
             {
-                Object node = Instantiate(Resources.Load("Prefabs/emptyPrefab"), new Vector3(parentPos.x + nodePosX,parentPos.y + nodePosY), Quaternion.identity, parent.transform);
+                Object node = Instantiate(UnityEngine.Resources.Load("Prefabs/intersectionPrefab"), new Vector3(parentPos.x + nodePosX,parentPos.y + nodePosY), Quaternion.identity, parent.transform);
                 nodePosX += incrementSize;
             }
             
-            //placing nodes for main positions
+            //placing nodes for tiling squares
             for (int j = 0; j < columns; j++)
             {
-                Object squareNode = Instantiate(Resources.Load("Prefabs/mainNodePrefab"),
+                Object squareNode = Instantiate(UnityEngine.Resources.Load("Prefabs/TilePrefab"),
                     new Vector3(parentPos.x + posTrackX, parentPos.y + posTrackY), Quaternion.identity, parent.transform);
                 squareNode.GameObject().transform.localScale = new Vector3(scale,scale);
                 squareNode.GameObject().GetComponent<SpriteRenderer>().color = black ? Color.black : Color.white;
@@ -112,7 +112,7 @@ public class GridCreator : EditorWindow
             {
                 for (int j = 0; j <= columns; j++)
                 {
-                    Object node = Instantiate(Resources.Load("Prefabs/emptyPrefab"), new Vector3(parentPos.x + nodePosX, parentPos.y + nodePosY), Quaternion.identity, parent.transform);
+                    Object node = Instantiate(UnityEngine.Resources.Load("Prefabs/intersectionPrefab"), new Vector3(parentPos.x + nodePosX, parentPos.y + nodePosY), Quaternion.identity, parent.transform);
                     nodePosX += incrementSize;
                 }
             }
