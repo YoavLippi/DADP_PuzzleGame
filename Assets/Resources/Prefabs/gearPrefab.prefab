@@ -560,14 +560,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf54564739f5f7946a3c91dd877e119e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topL: {fileID: 1014755713865999156}
-  topR: {fileID: 8144274255785938967}
-  botL: {fileID: 467247897585465858}
-  botR: {fileID: 1011149725421720237}
+  topL: {fileID: 7823314612856717269}
+  topR: {fileID: 7173953582443695816}
+  botL: {fileID: 4451112988270709566}
+  botR: {fileID: 4571164370725986111}
   topLeftColor: 0
   topRightColor: 0
   bottomLeftColor: 0
   bottomRightColor: 0
+  colorTracker: []
+  choiceTracker: 
 --- !u!114 &7099793264834101543
 MonoBehaviour:
   m_ObjectHideFlags: 0
