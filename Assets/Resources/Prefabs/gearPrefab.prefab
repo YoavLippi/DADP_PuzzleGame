@@ -508,16 +508,6 @@ CompositeCollider2D:
         Y: 10000000
       - X: 0
         Y: -1
-  - m_Collider: {fileID: 993166826147031540}
-    m_ColliderPaths:
-    - - X: 0
-        Y: 10000000
-      - X: -10000000
-        Y: 10000000
-      - X: -10000000
-        Y: 0
-      - X: 0
-        Y: 0
   - m_Collider: {fileID: 2118454667314460609}
     m_ColliderPaths:
     - - X: 0
@@ -538,6 +528,16 @@ CompositeCollider2D:
         Y: -10000000
       - X: 10000000
         Y: -10000001
+  - m_Collider: {fileID: 993166826147031540}
+    m_ColliderPaths:
+    - - X: 0
+        Y: 10000000
+      - X: -10000000
+        Y: 10000000
+      - X: -10000000
+        Y: 0
+      - X: 0
+        Y: 0
   m_CompositePaths:
     m_Paths:
     - - {x: 0.99997073, y: -1.0000001}
@@ -566,8 +566,8 @@ MonoBehaviour:
   botR: {fileID: 4571164370725986111}
   topLeftColor: 0
   topRightColor: 0
-  bottomLeftColor: 0
   bottomRightColor: 0
+  bottomLeftColor: 0
   colorTracker: []
   choiceTracker: 
 --- !u!114 &7099793264834101543
