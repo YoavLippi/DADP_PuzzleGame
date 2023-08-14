@@ -78,12 +78,29 @@ public class GridCreator : EditorWindow
         float posTrackX = -incrementSize*(columns-1)/2f, posTrackY = incrementSize*(rows-1)/2f, nodePosX = -incrementSize*columns/2f, nodePosY = incrementSize*rows/2;
         Vector2 parentPos = parent.transform.position;
         bool black = false;
+
+        BoardManager bm;
+        if (parent.GetComponent<BoardManager>())
+        {
+            bm = parent.GetComponent<BoardManager>();
+        }
+        else
+        {
+            bm = parent.AddComponent<BoardManager>();
+        }
+        bm.NodeDistance = incrementSize;
+        bm.PrefabScale = scale;
+        
         for (int i = 0; i < rows; i++)
         {
             //placing nodes for intersections
             for (int j = 0; j <= columns; j++)
             {
                 Object node = Instantiate(UnityEngine.Resources.Load("Prefabs/intersectionPrefab"), new Vector3(parentPos.x + nodePosX,parentPos.y + nodePosY), Quaternion.identity, parent.transform);
+                if (node.GetComponent<NodeValidator>())
+                {
+                    node.GetComponent<NodeValidator>().NodeDistance = incrementSize;
+                }
                 nodePosX += incrementSize;
             }
             
@@ -94,6 +111,7 @@ public class GridCreator : EditorWindow
                     new Vector3(parentPos.x + posTrackX, parentPos.y + posTrackY), Quaternion.identity, parent.transform);
                 squareNode.GameObject().transform.localScale = new Vector3(scale,scale);
                 squareNode.GameObject().GetComponent<SpriteRenderer>().color = black ? Color.black : Color.white;
+                squareNode.AddComponent<TileHoldChecker>();
                 black = !black;
                 posTrackX += incrementSize;
             }

@@ -47,6 +47,13 @@ public class GearController : MonoBehaviour
 
     private void Awake()
     {
+        //Setting scale to match the board
+        GameObject boardController = GameObject.FindWithTag("BoardController");
+        if (boardController.GetComponent<BoardManager>())
+        {
+            transform.localScale = transform.localScale * boardController.GetComponent<BoardManager>().PrefabScale;
+        }
+        
         colorTracker = new Color[]
         {
             DecodeColor(topLeftColor), DecodeColor(topRightColor), DecodeColor(bottomRightColor),

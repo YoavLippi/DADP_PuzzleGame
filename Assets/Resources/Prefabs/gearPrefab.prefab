@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4764811349498532958}
   - component: {fileID: 4451112988270709566}
   - component: {fileID: 2118454667314460609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomLeft
-  m_TagString: Untagged
+  m_TagString: Gears
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,9 +142,9 @@ GameObject:
   - component: {fileID: 5060466994213441081}
   - component: {fileID: 4571164370725986111}
   - component: {fileID: 8102679556717902419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomRight
-  m_TagString: Untagged
+  m_TagString: Gears
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,9 +273,9 @@ GameObject:
   - component: {fileID: 4290427557640427014}
   - component: {fileID: 7823314612856717269}
   - component: {fileID: 993166826147031540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopLeft
-  m_TagString: Untagged
+  m_TagString: Gears
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -403,9 +403,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6628074761404026786}
   - component: {fileID: 6565207814950979775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Gears
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487,9 +487,9 @@ GameObject:
   m_Component:
   - component: {fileID: 884107202623718866}
   - component: {fileID: 7075328239366878217}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Gears
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -574,9 +574,9 @@ GameObject:
   - component: {fileID: 3538118752737116197}
   - component: {fileID: 1700160884647090239}
   - component: {fileID: 7099793264834101543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gearPrefab
-  m_TagString: Untagged
+  m_TagString: Gears
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -591,8 +591,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.45000002, y: 0.45000002, z: 0.45000002}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4290427557640427014}
   - {fileID: 7255905739539492510}
@@ -668,52 +668,52 @@ CompositeCollider2D:
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
-  - m_Collider: {fileID: 3281545320516850127}
-    m_ColliderPaths:
-    - - X: 9900001
-        Y: 9900000
-      - X: -99999
-        Y: 9900001
-      - X: -100001
-        Y: -99999
-      - X: 9900000
-        Y: -100001
   - m_Collider: {fileID: 993166826147031540}
     m_ColliderPaths:
-    - - X: 99999
-        Y: 9900000
-      - X: -9900000
-        Y: 9900000
-      - X: -9900000
-        Y: -99999
-      - X: 99999
-        Y: -99999
+    - - X: 45000
+        Y: 4455000
+      - X: -4455000
+        Y: 4455000
+      - X: -4455000
+        Y: -45000
+      - X: 45000
+        Y: -45000
+  - m_Collider: {fileID: 3281545320516850127}
+    m_ColliderPaths:
+    - - X: 4455001
+        Y: 4455000
+      - X: -45000
+        Y: 4455001
+      - X: -45000
+        Y: -45000
+      - X: 4455000
+        Y: -45000
   - m_Collider: {fileID: 2118454667314460609}
     m_ColliderPaths:
-    - - X: 100001
-        Y: -9900000
-      - X: 99999
-        Y: 100001
-      - X: -9900001
-        Y: 99999
-      - X: -9900000
-        Y: -9900001
+    - - X: 45000
+        Y: -4455000
+      - X: 45000
+        Y: 45000
+      - X: -4455001
+        Y: 45000
+      - X: -4455000
+        Y: -4455001
   - m_Collider: {fileID: 8102679556717902419}
     m_ColliderPaths:
-    - - X: 9900000
-        Y: 99999
-      - X: -99999
-        Y: 99999
-      - X: -99999
-        Y: -9900000
-      - X: 9900000
-        Y: -9900000
+    - - X: 4455000
+        Y: 45000
+      - X: -45000
+        Y: 45000
+      - X: -45000
+        Y: -4455000
+      - X: 4455000
+        Y: -4455000
   m_CompositePaths:
     m_Paths:
-    - - {x: -0.99, y: -0.9899708}
-      - {x: 0.99, y: -0.9899707}
-      - {x: 0.9899708, y: 0.99}
-      - {x: -0.99, y: 0.9899707}
+    - - {x: -0.44550002, y: -0.4454708}
+      - {x: 0.44550002, y: -0.4454707}
+      - {x: 0.4454708, y: 0.44550002}
+      - {x: -0.44550002, y: 0.4454707}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -752,6 +752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6290866f705961409ffa8876eed0361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attachedController: {fileID: 1700160884647090239}
+  boardLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &8144274255785938967
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,9 +767,9 @@ GameObject:
   - component: {fileID: 7255905739539492510}
   - component: {fileID: 7173953582443695816}
   - component: {fileID: 3281545320516850127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopRight
-  m_TagString: Untagged
+  m_TagString: Gears
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
