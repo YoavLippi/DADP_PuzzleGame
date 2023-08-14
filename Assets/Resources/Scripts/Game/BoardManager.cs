@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NodeValidator : MonoBehaviour
+public class BoardManager : MonoBehaviour
 {
     //Serialized for debugging, nothing else
     [SerializeField] private float nodeDistance;
+    [SerializeField] private float prefabScale;
 
     public float NodeDistance
     {
@@ -13,8 +14,9 @@ public class NodeValidator : MonoBehaviour
         set => nodeDistance = value;
     }
 
-    private void ValidateJunctions()
+    public float PrefabScale
     {
-        
+        get => prefabScale;
+        set => prefabScale = value;
     }
 }
