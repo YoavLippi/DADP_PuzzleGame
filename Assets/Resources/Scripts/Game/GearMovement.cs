@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GearMovement : MonoBehaviour
 {
+    [SerializeField] private bool movable, rotatable;
     [SerializeField] private GearController attachedController;
     [SerializeField] private LayerMask boardLayer;
 
@@ -21,15 +22,22 @@ public class GearMovement : MonoBehaviour
 
     private void OnMouseDown()
     {
-        RaycastHit2D hit = Physics2D.Raycast((Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
-            Mathf.Infinity, boardLayer);
-        if (hit)
+        if (movable)
         {
-            hit.transform.GetComponent<TileHoldChecker>().occupied = false;
+            RaycastHit2D hit = Physics2D.Raycast((Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
+                Mathf.Infinity, boardLayer);
+            if (hit)
+            {
+                hit.transform.GetComponent<TileHoldChecker>().occupied = false;
+            }
+            initialPos = rb.position;
+            offset = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - rb.position;
         }
-        initialPos = rb.position;
-        offset = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - rb.position;
-        StartCoroutine(clickChecker());
+
+        if (rotatable)
+        {
+            StartCoroutine(clickChecker());
+        }
     }
 
     private IEnumerator clickChecker()
@@ -43,28 +51,34 @@ public class GearMovement : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        rb.position = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset;
+        if (movable)
+        {
+            rb.position = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset;
+        }
     }
 
     private void OnMouseUp()
     {
-        RaycastHit2D hit = Physics2D.Raycast((Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
-            Mathf.Infinity, boardLayer);
-        if (hit)
+        if (movable)
         {
-            if (!hit.transform.GetComponent<TileHoldChecker>().occupied)
+            RaycastHit2D hit = Physics2D.Raycast((Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
+                Mathf.Infinity, boardLayer);
+            if (hit)
             {
-                rb.position = hit.collider.transform.position;
-                hit.transform.GetComponent<TileHoldChecker>().occupied = true;
-            }
-            else
-            {
-                rb.position = initialPos;
-                RaycastHit2D returnHit = Physics2D.Raycast(initialPos, Vector2.zero,
-                    Mathf.Infinity, boardLayer);
-                if (returnHit)
+                if (!hit.transform.GetComponent<TileHoldChecker>().occupied)
                 {
-                    returnHit.transform.GetComponent<TileHoldChecker>().occupied = true;
+                    rb.position = hit.collider.transform.position;
+                    hit.transform.GetComponent<TileHoldChecker>().occupied = true;
+                }
+                else
+                {
+                    rb.position = initialPos;
+                    RaycastHit2D returnHit = Physics2D.Raycast(initialPos, Vector2.zero,
+                        Mathf.Infinity, boardLayer);
+                    if (returnHit)
+                    {
+                        returnHit.transform.GetComponent<TileHoldChecker>().occupied = true;
+                    }
                 }
             }
         }
