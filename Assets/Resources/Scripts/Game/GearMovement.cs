@@ -37,6 +37,7 @@ public class GearMovement : MonoBehaviour
         if (hit)
         {
             hit.transform.GetComponent<TileHoldChecker>().occupied = true;
+            rb.position = hit.transform.position;
         }
     }
 
@@ -57,16 +58,6 @@ public class GearMovement : MonoBehaviour
         if (rotatable)
         {
             timer = Time.time;
-            //StartCoroutine(clickChecker());
-        }
-    }
-
-    private IEnumerator clickChecker()
-    {
-        yield return new WaitForSeconds(0.12f);
-        if (!Input.GetMouseButton(0))
-        {
-            attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x);
         }
     }
 
