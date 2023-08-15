@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using Resources.Enums;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GearController : MonoBehaviour
 {
@@ -20,6 +22,22 @@ public class GearController : MonoBehaviour
     
     //array to change the selected choices to avoid confusion, same convention as the one above
     [SerializeField] private PossibleColor[] choiceTracker;
+
+    private float scale;
+    
+    [SerializeField] private int rotateAmount;
+
+    public int RotateAmount
+    {
+        get => rotateAmount;
+        set => rotateAmount = value;
+    }
+
+    public float Scale
+    {
+        get => scale;
+        set => scale = value;
+    }
 
     public SpriteRenderer TopL
     {
@@ -51,7 +69,8 @@ public class GearController : MonoBehaviour
         GameObject boardController = GameObject.FindWithTag("BoardController");
         if (boardController.GetComponent<BoardManager>())
         {
-            transform.localScale = transform.localScale * boardController.GetComponent<BoardManager>().PrefabScale;
+            scale = boardController.GetComponent<BoardManager>().PrefabScale;
+            transform.localScale = transform.localScale * scale;
         }
         
         colorTracker = new Color[]
@@ -73,6 +92,14 @@ public class GearController : MonoBehaviour
         topR.color = colorTracker[1];
         botR.color = colorTracker[2];
         botL.color = colorTracker[3];
+        if (transform.GetComponent<GearMovement>().Rotatable)
+        {
+            rotateAmount = Random.Range(0, 4);
+            for (int i = 0; i <= rotateAmount; i++)
+            {
+                RotateGear(true);
+            }
+        }
     }
 
     public void RotateGear(bool rotateLeft)
