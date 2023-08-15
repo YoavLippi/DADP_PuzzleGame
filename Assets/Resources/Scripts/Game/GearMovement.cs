@@ -91,6 +91,11 @@ public class GearMovement : MonoBehaviour
     {
         if (movable)
         {
+            //check if the gear is out of the bounds of the map
+            if (rb.position.y is >= 5f or <= -5f || rb.position.x is >= 8.8f or <= -8.8f)
+            {
+                rb.position = initialPos;
+            }
             RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
                 Mathf.Infinity, boardLayer);
             if (hit)
