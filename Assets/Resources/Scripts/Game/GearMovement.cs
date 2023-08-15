@@ -39,6 +39,24 @@ public class GearMovement : MonoBehaviour
             hit.transform.GetComponent<TileHoldChecker>().occupied = true;
             rb.position = hit.transform.position;
         }
+        
+        foreach (var child in GetComponentsInChildren<SpriteRenderer>())
+        {
+            if (child.transform.name == "Circle")
+            {
+                if (!movable && !rotatable)
+                {
+                    child.color = Color.black;
+                } else if (!movable && rotatable)
+                {
+                    child.color = Color.red;
+                }
+                else
+                {
+                    child.color = Color.white;
+                }
+            }
+        }
     }
 
     private void OnMouseDown()
@@ -97,7 +115,7 @@ public class GearMovement : MonoBehaviour
 
         if (rotatable)
         {
-            if (Time.time - timer <= 0.4f)
+            if (Time.time - timer <= 0.3f)
             {
                 attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x);   
             }
