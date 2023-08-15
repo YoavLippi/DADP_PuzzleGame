@@ -9,6 +9,8 @@ public class GearMovement : MonoBehaviour
     [SerializeField] private GearController attachedController;
     [SerializeField] private LayerMask boardLayer;
 
+    private float timer;
+
     private Rigidbody2D rb;
 
     private Vector2 offset;
@@ -24,7 +26,7 @@ public class GearMovement : MonoBehaviour
     {
         if (movable)
         {
-            RaycastHit2D hit = Physics2D.Raycast((Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
+            RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
                 Mathf.Infinity, boardLayer);
             if (hit)
             {
@@ -36,7 +38,8 @@ public class GearMovement : MonoBehaviour
 
         if (rotatable)
         {
-            StartCoroutine(clickChecker());
+            timer = Time.time;
+            //StartCoroutine(clickChecker());
         }
     }
 
@@ -61,7 +64,7 @@ public class GearMovement : MonoBehaviour
     {
         if (movable)
         {
-            RaycastHit2D hit = Physics2D.Raycast((Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
+            RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
                 Mathf.Infinity, boardLayer);
             if (hit)
             {
@@ -80,6 +83,14 @@ public class GearMovement : MonoBehaviour
                         returnHit.transform.GetComponent<TileHoldChecker>().occupied = true;
                     }
                 }
+            }
+        }
+
+        if (rotatable)
+        {
+            if (Time.time - timer <= 0.4f)
+            {
+                attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x);   
             }
         }
     }

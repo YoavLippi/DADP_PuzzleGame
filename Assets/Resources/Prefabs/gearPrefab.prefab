@@ -752,6 +752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6290866f705961409ffa8876eed0361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movable: 1
+  rotatable: 1
   attachedController: {fileID: 1700160884647090239}
   boardLayer:
     serializedVersion: 2
