@@ -98,3 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 0
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
