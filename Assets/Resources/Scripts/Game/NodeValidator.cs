@@ -14,17 +14,6 @@ public class NodeValidator : MonoBehaviour
         get => nodeDistance;
         set => nodeDistance = value;
     }
-
-    private void Update()
-    {
-        Vector2 nodePos = transform.position;
-        Vector2[] rayPosArr = raycastPositions(nodePos);
-        Debug.DrawLine(rayPosArr[0], new Vector3(rayPosArr[0].x+0.001f,rayPosArr[0].y));
-        /*Debug.DrawRay(rayPosArr[1], Vector2.zero);
-        Debug.DrawRay(rayPosArr[2], Vector2.zero);
-        Debug.DrawRay(rayPosArr[3], Vector2.zero);*/
-    }
-
     public bool ValidateJunction()
     {
         Vector2 nodePos = transform.position;
@@ -37,11 +26,6 @@ public class NodeValidator : MonoBehaviour
             Mathf.Infinity, gearLayer);
         RaycastHit2D bLHit = Physics2D.Raycast(rayPosArr[3], Vector2.zero,
             Mathf.Infinity, gearLayer);
-        
-        /*Debug.DrawRay(rayPosArr[0], Vector2.zero);
-        Debug.DrawRay(rayPosArr[1], Vector2.zero);
-        Debug.DrawRay(rayPosArr[2], Vector2.zero);
-        Debug.DrawRay(rayPosArr[3], Vector2.zero);*/
 
         Color[] hitColors = { Color.gray,Color.gray,Color.gray,Color.gray };
         Color checkColor = Color.clear;
@@ -75,7 +59,7 @@ public class NodeValidator : MonoBehaviour
         {
             for (int i = 0; i < 4; i++)
             {
-                if (hitColors[i] != checkColor)
+                if (hitColors[i] != checkColor && hitColors[i] != Color.gray)
                 {
                     validFlag = false;
                     break;
@@ -95,12 +79,12 @@ public class NodeValidator : MonoBehaviour
         float baseX = basePos.x, baseY = basePos.y;
         Vector2[] output = new Vector2[4];
         //-+ ++ +- --
-        //Dividing by 1.5 so that the raycast doesn't hit a theoretical corner that shouldn't be there
-        float divFactor = 1f;
-        output[0] = new Vector2(baseX - nodeDistance, baseY + nodeDistance)/divFactor;
-        output[1] = new Vector2(baseX + nodeDistance, baseY + nodeDistance)/divFactor;
-        output[2] = new Vector2(baseX + nodeDistance, baseY - nodeDistance)/divFactor;
-        output[3] = new Vector2(baseX - nodeDistance, baseY - nodeDistance)/divFactor;
+        //Dividing so that the raycast doesn't hit a theoretical corner that shouldn't be there
+        float divFactor = 2f;
+        output[0] = (new Vector2(baseX - nodeDistance, baseY + nodeDistance) - basePos)/divFactor + basePos;
+        output[1] = (new Vector2(baseX + nodeDistance, baseY + nodeDistance) - basePos)/divFactor + basePos;
+        output[2] = (new Vector2(baseX + nodeDistance, baseY - nodeDistance) - basePos)/divFactor + basePos;
+        output[3] = (new Vector2(baseX - nodeDistance, baseY - nodeDistance) - basePos)/divFactor + basePos;
         return output;
     }
 }

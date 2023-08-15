@@ -47,7 +47,7 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    public bool ValidateJunctions()
+    private bool ValidateJunctions()
     {
         foreach (var node in GetComponentsInChildren<NodeValidator>())
         {

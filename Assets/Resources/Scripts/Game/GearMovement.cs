@@ -115,7 +115,7 @@ public class GearMovement : MonoBehaviour
 
         if (rotatable)
         {
-            if (Time.time - timer <= 0.3f)
+            if (Time.time - timer <= 0.3f && Vector2.Distance(rb.position, initialPos) < 0.01f)
             {
                 attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x);   
             }
