@@ -17,9 +17,27 @@ public class GearMovement : MonoBehaviour
 
     private Vector2 initialPos;
 
+    public bool Movable
+    {
+        get => movable;
+        set => movable = value;
+    }
+
+    public bool Rotatable
+    {
+        get => rotatable;
+        set => rotatable = value;
+    }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
+            Mathf.Infinity, boardLayer);
+        if (hit)
+        {
+            hit.transform.GetComponent<TileHoldChecker>().occupied = true;
+        }
     }
 
     private void OnMouseDown()
