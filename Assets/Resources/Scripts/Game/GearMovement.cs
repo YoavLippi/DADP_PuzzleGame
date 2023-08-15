@@ -61,6 +61,7 @@ public class GearMovement : MonoBehaviour
 
     private void OnMouseDown()
     {
+        initialPos = rb.position;
         if (movable)
         {
             RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
@@ -69,7 +70,6 @@ public class GearMovement : MonoBehaviour
             {
                 hit.transform.GetComponent<TileHoldChecker>().occupied = false;
             }
-            initialPos = rb.position;
             offset = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - rb.position;
         }
 
