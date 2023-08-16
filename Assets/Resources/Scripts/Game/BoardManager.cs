@@ -11,9 +11,15 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private float prefabScale;
     [SerializeField] private List<NodeValidator> allIntersections;
     [SerializeField] private List<TileHoldChecker> allTiles;
+    
+    [Header("Important stuff")]
     [SerializeField] private int moveCount;
     [SerializeField] private TextMeshProUGUI moveCounter;
     [SerializeField] private int levelNum;
+    
+    [Header("Change these to the move amounts required for each")]
+    [SerializeField] private int threeStars;
+    [SerializeField] private int twoStars, oneStar;
 
     public List<TileHoldChecker> AllTiles
     {
@@ -56,7 +62,11 @@ public class BoardManager : MonoBehaviour
         {
             GameObject victoryScreen = Instantiate((GameObject)UnityEngine.Resources.Load("Prefabs/StarDisplay"), Vector3.zero,
                 Quaternion.identity);
-            victoryScreen.GetComponent<VictoryScoreController>().ShowVictory(moveCount);
+            VictoryScoreController vc = victoryScreen.GetComponent<VictoryScoreController>();
+            vc.OneStar = oneStar;
+            vc.TwoStars = twoStars;
+            vc.ThreeStars = threeStars;
+            vc.ShowVictory(moveCount);
             victoryScreen.GetComponent<LoadShopScene>().LevelDoneFlag = levelNum;
         }
     }

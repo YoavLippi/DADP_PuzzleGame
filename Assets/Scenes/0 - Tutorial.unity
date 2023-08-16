@@ -1770,6 +1770,10 @@ MonoBehaviour:
   - {fileID: 1397913490}
   moveCount: 0
   moveCounter: {fileID: 1396908832}
+  levelNum: 0
+  threeStars: 1
+  twoStars: 2
+  oneStar: 3
 --- !u!4 &1658607311
 Transform:
   m_ObjectHideFlags: 0

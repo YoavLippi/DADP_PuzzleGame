@@ -94,8 +94,11 @@ public class LoadShopScene : MonoBehaviour
     
     public void ReturnToMenu()
     {
-        FlagHandler f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
-        f.clearFlags[levelDoneFlag] = true;
+        if (GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>())
+        {
+            FlagHandler f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
+            f.clearFlags[levelDoneFlag] = true;
+        }
         SceneManager.LoadScene("Main Screen");
     }
 

@@ -33,6 +33,24 @@ namespace Resources.Scripts.Game
 
         [SerializeField] private LayerMask gearLayer;
 
+        public int ThreeStars
+        {
+            get => threeStars;
+            set => threeStars = value;
+        }
+
+        public int TwoStars
+        {
+            get => twoStars;
+            set => twoStars = value;
+        }
+
+        public int OneStar
+        {
+            get => oneStar;
+            set => oneStar = value;
+        }
+
         private void DisableColliders()
         {
             Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector2.zero, Mathf.Infinity, gearLayer);
