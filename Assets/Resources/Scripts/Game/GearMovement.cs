@@ -8,6 +8,8 @@ public class GearMovement : MonoBehaviour
     [SerializeField] private bool movable, rotatable;
     [SerializeField] private GearController attachedController;
     [SerializeField] private LayerMask boardLayer;
+    [SerializeField] private LayerMask gearLayer;
+    [SerializeField] private GameObject arrowPointer;
 
     private float timer;
 
@@ -56,6 +58,45 @@ public class GearMovement : MonoBehaviour
         }
     }
 
+    private void OnMouseEnter()
+    {
+        if (rotatable)
+        {
+            arrowPointer.SetActive(true);
+            if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x > rb.position.x)
+            {
+                arrowPointer.transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+            }
+            else
+            {
+                arrowPointer.transform.rotation = Quaternion.Euler(new Vector3(0,0,180));
+            }
+        }
+    }
+
+    private void OnMouseOver()
+    {
+        if (rotatable)
+        {
+            if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x > rb.position.x)
+            {
+                arrowPointer.transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+            }
+            else
+            {
+                arrowPointer.transform.rotation = Quaternion.Euler(new Vector3(0,0,180));
+            }
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        if (rotatable)
+        {
+            arrowPointer.SetActive(false);
+        }
+    }
+
     private void OnMouseDown()
     {
         //Debug.Log($"{transform} was clicked");
@@ -101,6 +142,7 @@ public class GearMovement : MonoBehaviour
             {
                 rb.position = initialPos;
             }
+            
             RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
                 Mathf.Infinity, boardLayer);
             if (hit)
@@ -112,22 +154,34 @@ public class GearMovement : MonoBehaviour
                     lastTile = hit.transform.GetComponent<TileHoldChecker>();
                     lastTile.transform.GetComponent<Collider2D>().enabled = false;
                 }
-                else
+            }
+            else
+            {
+                lastTile = null;
+            }
+            
+            //changing layers so the raycast doesn't hit this object
+            int originalLayer = this.gameObject.layer;
+            this.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+            RaycastHit2D hitGear = Physics2D.Raycast(rb.position, Vector2.zero,
+                Mathf.Infinity, gearLayer);
+            if (hitGear)
+            {
+                if (hitGear.transform != this.transform)
                 {
                     rb.position = initialPos;
                     RaycastHit2D returnHit = Physics2D.Raycast(initialPos, Vector2.zero,
                         Mathf.Infinity, boardLayer);
                     if (returnHit)
                     {
+                        lastTile = returnHit.transform.GetComponent<TileHoldChecker>();
                         returnHit.transform.GetComponent<TileHoldChecker>().occupied = true;
                         lastTile.transform.GetComponent<Collider2D>().enabled = false;
                     }
                 }
             }
-            else
-            {
-                lastTile = null;
-            }
+
+            this.gameObject.layer = originalLayer;
         }
 
         if (rotatable)

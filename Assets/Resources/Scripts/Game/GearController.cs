@@ -8,6 +8,8 @@ using Random = UnityEngine.Random;
 public class GearController : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer topL, topR, botL, botR;
+    
+    [SerializeField] private GameObject arrowPointer;
 
     [Header("Initial Color Choices")]
     [Header("Ignore once gameplay has started")]
@@ -120,8 +122,14 @@ public class GearController : MonoBehaviour
     {
         if (rotateLeft)
         {
-            //Delete this next line when the animation is in place
             transform.Rotate(new Vector3(0,0,90));
+            //compensating the rotation for the arrow so it stays on top
+            Vector2 parentPos = transform.position;
+            Vector2 childPos = arrowPointer.transform.position;
+            float newX = parentPos.x + (childPos.y - parentPos.y);
+            float newY = parentPos.y - (childPos.x - parentPos.x);
+            arrowPointer.transform.position = new Vector3(newX, newY);
+            
             //we rotate CCW, so that means everything has to rotate CW to ensure top left is still in the top left position
 
             Color temp = colorTracker[0];
@@ -137,8 +145,15 @@ public class GearController : MonoBehaviour
         }
         else
         {
-            //Delete this next line when the animation is in place
             transform.Rotate(new Vector3(0,0,-90));
+            
+            //compensating for rotation
+            Vector2 parentPos = transform.position;
+            Vector2 childPos = arrowPointer.transform.position;
+            float newX = parentPos.x - (childPos.y - parentPos.y);
+            float newY = parentPos.y + (childPos.x - parentPos.x);
+            arrowPointer.transform.position = new Vector3(newX, newY);
+            
             //this is vice versa, we rotate everything CW, so the array rotates CCW
             Color temp = colorTracker[3];
             PossibleColor temp2 = choiceTracker[3];

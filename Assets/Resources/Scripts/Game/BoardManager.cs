@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using Resources.Scripts.Game;
 using TMPro;
@@ -60,16 +61,22 @@ public class BoardManager : MonoBehaviour
     {
         if (ValidateJunctions())
         {
-            GameObject victoryScreen = Instantiate((GameObject)UnityEngine.Resources.Load("Prefabs/StarDisplay"), Vector3.zero,
-                Quaternion.identity);
-            VictoryScoreController vc = victoryScreen.GetComponent<VictoryScoreController>();
-            vc.OneStar = oneStar;
-            vc.TwoStars = twoStars;
-            vc.ThreeStars = threeStars;
-            vc.ShowVictory(moveCount);
-            victoryScreen.GetComponent<LoadShopScene>().LevelDoneFlag = levelNum;
+            StartCoroutine(DoDelay());
         }
     }
+
+    private IEnumerator DoDelay()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        GameObject victoryScreen = Instantiate((GameObject)UnityEngine.Resources.Load("Prefabs/StarDisplay"), Vector3.zero,
+            Quaternion.identity);
+        VictoryScoreController vc = victoryScreen.GetComponent<VictoryScoreController>();
+        vc.OneStar = oneStar;
+        vc.TwoStars = twoStars;
+        vc.ThreeStars = threeStars;
+        vc.ShowVictory(moveCount);
+        victoryScreen.GetComponent<LoadShopScene>().LevelDoneFlag = levelNum;
+    } 
 
     public bool CheckAllOccupied()
     {
