@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flower Background home_0: -8908965822694416162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
