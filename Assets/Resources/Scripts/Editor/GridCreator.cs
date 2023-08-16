@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using Object = UnityEngine.Object;
+using System.Collections.Generic;
 
 public class GridCreator : EditorWindow
 {
@@ -118,6 +119,7 @@ public class GridCreator : EditorWindow
         {
             bm = parent.AddComponent<BoardManager>();
         }
+        bm.AllIntersections = new List<NodeValidator>();
         bm.NodeDistance = incrementSize;
         bm.PrefabScale = scale;
         
