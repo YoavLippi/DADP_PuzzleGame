@@ -85,7 +85,6 @@ public class GearController : MonoBehaviour
             thisBoardManager = boardController.GetComponent<BoardManager>();
             scale = thisBoardManager.PrefabScale;
             transform.localScale = transform.localScale * scale;
-            
         }
         
         colorTracker = new Color[]

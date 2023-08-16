@@ -54,37 +54,40 @@ public class LoadShopScene : MonoBehaviour
     private void Awake()
     {
         FlagHandler f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
-        done0 = f.clearFlags[0];
-        done01 = f.clearFlags[1];
-        done012 = f.clearFlags[2];
-        done0123 = f.clearFlags[3];
-        done01234 = f.clearFlags[4];
-        
-        Level1Button.gameObject.SetActive(false);
-        Level2Button.gameObject.SetActive(false);
-        Level4Button.gameObject.SetActive(false);
-        Level3Button.gameObject.SetActive(false);
-        Level5Button.gameObject.SetActive(false);
-        
-        if (done0)
+        if (this.gameObject.CompareTag("EditorOnly"))
         {
-            Level1Button.gameObject.SetActive(true);
-
-            if (done01)
+            done0 = f.clearFlags[0];
+            done01 = f.clearFlags[1];
+            done012 = f.clearFlags[2];
+            done0123 = f.clearFlags[3];
+            done01234 = f.clearFlags[4];
+        
+            Level1Button.gameObject.SetActive(false);
+            Level2Button.gameObject.SetActive(false);
+            Level4Button.gameObject.SetActive(false);
+            Level3Button.gameObject.SetActive(false);
+            Level5Button.gameObject.SetActive(false);
+        
+            if (done0)
             {
-                Level2Button.gameObject.SetActive(true);
+                Level1Button.gameObject.SetActive(true);
 
-                if (done012)
+                if (done01)
                 {
-                    Level3Button.gameObject.SetActive(true);
+                    Level2Button.gameObject.SetActive(true);
 
-                    if (done0123)
+                    if (done012)
                     {
-                        Level4Button.gameObject.SetActive(true);
+                        Level3Button.gameObject.SetActive(true);
 
-                        if (done01234)
+                        if (done0123)
                         {
-                            Level5Button.gameObject.SetActive(true);
+                            Level4Button.gameObject.SetActive(true);
+
+                            if (done01234)
+                            {
+                                Level5Button.gameObject.SetActive(true);
+                            }
                         }
                     }
                 }
