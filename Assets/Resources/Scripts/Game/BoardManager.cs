@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Resources.Scripts.Game;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -52,14 +53,9 @@ public class BoardManager : MonoBehaviour
     {
         if (ValidateJunctions())
         {
-            //todo victory implementation
-            Debug.Log("YOU WIN!!!");
-            Object victoryScreen = Instantiate(UnityEngine.Resources.Load("Prefabs/StarDisplay"), Vector3.zero,
+            GameObject victoryScreen = Instantiate((GameObject)UnityEngine.Resources.Load("Prefabs/StarDisplay"), Vector3.zero,
                 Quaternion.identity);
-        }
-        else
-        {
-            Debug.Log("Incorrect solution");
+            victoryScreen.GetComponent<VictoryScoreController>().ShowVictory(moveCount);
         }
     }
 

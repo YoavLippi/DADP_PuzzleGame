@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Resources.Scripts.Game
 {
@@ -22,14 +23,28 @@ namespace Resources.Scripts.Game
 
         [SerializeField] private GameObject starThree;
 
+        [SerializeField] private TextMeshProUGUI winText;
+        
+        [Header("Sundry information")]
+        
         [SerializeField] private Color starWinColor;
 
         [SerializeField] private Color starBaseColor;
 
-        [SerializeField] private TextMeshProUGUI winText;
+        [SerializeField] private LayerMask gearLayer;
 
+        private void DisableColliders()
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector2.zero, Mathf.Infinity, gearLayer);
+
+            foreach (var coll in colliders)
+            {
+                coll.enabled = false;
+            }
+        }
         public void ShowVictory(int score)
         {
+            DisableColliders();
             starOne.GetComponent<SpriteRenderer>().color = starBaseColor;
             starTwo.GetComponent<SpriteRenderer>().color = starBaseColor;
             starThree.GetComponent<SpriteRenderer>().color = starBaseColor;
