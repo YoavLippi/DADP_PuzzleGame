@@ -173,11 +173,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &11797492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -275,17 +271,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75c5ccfba1813e4eb82b5f3a61c26fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   nodeDistance: 2.666667
   gearLayer:
     serializedVersion: 2
     m_Bits: 64
-=======
-  nodeDistance: 0
-  gearLayer:
-    serializedVersion: 2
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &85220228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -393,17 +382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75c5ccfba1813e4eb82b5f3a61c26fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   nodeDistance: 2.666667
   gearLayer:
     serializedVersion: 2
     m_Bits: 64
-=======
-  nodeDistance: 0
-  gearLayer:
-    serializedVersion: 2
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &238407720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -501,17 +483,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75c5ccfba1813e4eb82b5f3a61c26fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   nodeDistance: 2.666667
   gearLayer:
     serializedVersion: 2
     m_Bits: 64
-=======
-  nodeDistance: 0
-  gearLayer:
-    serializedVersion: 2
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &450350307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -862,11 +837,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &589038315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1086,8 +1057,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1145,11 +1116,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &905784658
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1323,11 +1290,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &952442485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1736,8 +1699,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1909,8 +1872,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1968,11 +1931,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &1249568574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2078,11 +2037,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &1285537933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2297,8 +2252,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2566,8 +2521,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2739,8 +2694,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2879,11 +2834,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &1569562260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3065,11 +3016,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &1606833380
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3247,11 +3194,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &1755849709
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3352,11 +3295,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &1759698515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3531,17 +3470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75c5ccfba1813e4eb82b5f3a61c26fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   nodeDistance: 2.666667
   gearLayer:
     serializedVersion: 2
     m_Bits: 64
-=======
-  nodeDistance: 0
-  gearLayer:
-    serializedVersion: 2
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &1923094988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3756,8 +3688,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3815,11 +3747,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &2016298246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4034,8 +3962,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4093,11 +4021,7 @@ MonoBehaviour:
   nodeDistance: 2.6666667
   gearLayer:
     serializedVersion: 2
-<<<<<<< Updated upstream
     m_Bits: 64
-=======
-    m_Bits: 0
->>>>>>> Stashed changes
 --- !u!212 &2063329632
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4317,8 +4241,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
-  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
