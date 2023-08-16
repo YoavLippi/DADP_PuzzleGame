@@ -9,13 +9,6 @@ public class BoardManager : MonoBehaviour
     //Serialized for debugging, nothing else
     [SerializeField] private float nodeDistance;
     [SerializeField] private float prefabScale;
-    [SerializeField] private List<NodeValidator> allIntersections;
-
-    public List<NodeValidator> AllIntersections
-    {
-        get => allIntersections;
-        set => allIntersections = value;
-    }
 
     public float NodeDistance
     {
@@ -31,29 +24,6 @@ public class BoardManager : MonoBehaviour
 
     private void Start()
     {
-        Random.InitState(42);
-    }
-
-    public void EndLevel()
-    {
-        if (ValidateJunctions())
-        {
-            //todo victory implementation
-            Debug.Log("YOU WIN!!!");
-        }
-        else
-        {
-            Debug.Log("Incorrect solution");
-        }
-    }
-
-    private bool ValidateJunctions()
-    {
-        foreach (var node in GetComponentsInChildren<NodeValidator>())
-        {
-            if (!node.ValidateJunction()) return false;
-        }
-
-        return true;
+        Random.seed = 42;
     }
 }

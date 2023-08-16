@@ -53,11 +53,6 @@ public class GridCreator : EditorWindow
         {
             ClearChildren();
         }
-
-        if (GUILayout.Button("Update Intersect Info"))
-        {
-            UpdateInfo();
-        }
     }
 
     private void ClearChildren()
@@ -68,30 +63,6 @@ public class GridCreator : EditorWindow
             {
                 DestroyImmediate(child.gameObject);
             }
-        }
-    }
-
-    private void UpdateInfo()
-    {
-        int maxDivs = rows > columns ? rows : columns;
-        float scale = desiredSize/maxDivs;
-        BoardManager bm;
-        if (parent.GetComponent<BoardManager>())
-        {
-            bm = parent.GetComponent<BoardManager>();
-        }
-        else
-        {
-            bm = parent.AddComponent<BoardManager>();
-        }
-        bm.NodeDistance = scale;
-        bm.PrefabScale = scale;
-        bm.AllIntersections.Clear();
-
-        foreach (var node in bm.GetComponentsInChildren<NodeValidator>())
-        {
-            node.NodeDistance = scale;
-            bm.AllIntersections.Add(node);
         }
     }
 
@@ -130,7 +101,6 @@ public class GridCreator : EditorWindow
                 if (node.GetComponent<NodeValidator>())
                 {
                     node.GetComponent<NodeValidator>().NodeDistance = incrementSize;
-                    bm.AllIntersections.Add(node.GetComponent<NodeValidator>());
                 }
                 nodePosX += incrementSize;
             }
@@ -162,11 +132,6 @@ public class GridCreator : EditorWindow
                 for (int j = 0; j <= columns; j++)
                 {
                     Object node = Instantiate(UnityEngine.Resources.Load("Prefabs/intersectionPrefab"), new Vector3(parentPos.x + nodePosX, parentPos.y + nodePosY), Quaternion.identity, parent.transform);
-                    if (node.GetComponent<NodeValidator>())
-                    {
-                        node.GetComponent<NodeValidator>().NodeDistance = incrementSize;
-                        bm.AllIntersections.Add(node.GetComponent<NodeValidator>());
-                    }
                     nodePosX += incrementSize;
                 }
             }

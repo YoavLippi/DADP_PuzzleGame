@@ -31,39 +31,17 @@ public class GearMovement : MonoBehaviour
 
     private void Awake()
     {
-        GetComponent<CompositeCollider2D>().layerOverridePriority = 10;
         rb = GetComponent<Rigidbody2D>();
         RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
             Mathf.Infinity, boardLayer);
         if (hit)
         {
             hit.transform.GetComponent<TileHoldChecker>().occupied = true;
-            rb.position = hit.transform.position;
-        }
-        
-        foreach (var child in GetComponentsInChildren<SpriteRenderer>())
-        {
-            if (child.transform.name == "Circle")
-            {
-                if (!movable && !rotatable)
-                {
-                    child.color = Color.black;
-                } else if (!movable && rotatable)
-                {
-                    child.color = Color.red;
-                }
-                else
-                {
-                    child.color = Color.white;
-                }
-            }
         }
     }
 
     private void OnMouseDown()
     {
-        Debug.Log($"{transform} was clicked");
-        initialPos = rb.position;
         if (movable)
         {
             RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
@@ -72,12 +50,23 @@ public class GearMovement : MonoBehaviour
             {
                 hit.transform.GetComponent<TileHoldChecker>().occupied = false;
             }
+            initialPos = rb.position;
             offset = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - rb.position;
         }
 
         if (rotatable)
         {
             timer = Time.time;
+            //StartCoroutine(clickChecker());
+        }
+    }
+
+    private IEnumerator clickChecker()
+    {
+        yield return new WaitForSeconds(0.12f);
+        if (!Input.GetMouseButton(0))
+        {
+            attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x);
         }
     }
 
@@ -93,11 +82,6 @@ public class GearMovement : MonoBehaviour
     {
         if (movable)
         {
-            //check if the gear is out of the bounds of the map
-            if (rb.position.y is >= 5f or <= -5f || rb.position.x is >= 8.8f or <= -8.8f)
-            {
-                rb.position = initialPos;
-            }
             RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
                 Mathf.Infinity, boardLayer);
             if (hit)
@@ -122,7 +106,7 @@ public class GearMovement : MonoBehaviour
 
         if (rotatable)
         {
-            if (Time.time - timer <= 0.3f && Vector2.Distance(rb.position, initialPos) < 0.01f)
+            if (Time.time - timer <= 0.4f)
             {
                 attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x);   
             }

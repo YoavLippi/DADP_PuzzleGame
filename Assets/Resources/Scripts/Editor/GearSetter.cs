@@ -47,9 +47,8 @@ public class GearSetter : EditorWindow
         {
             childGears.Add(gear);
         }
+        //Shuffle(childGears);
 
-        childGears = Shuffle(childGears);
-        
         float incrementSize = GameObject.FindWithTag("BoardController").GetComponent<BoardManager>().NodeDistance;
         float xPos = parent.transform.position.x- 7.5f;
         float yPos = parent.transform.position.y + 4.2f;
@@ -69,9 +68,9 @@ public class GearSetter : EditorWindow
         }
     }
 
-    private List<GearController> Shuffle(List<GearController> inputList)
+    private void Shuffle(List<GearController> inputList)
     {
-        List<GearController> temp = new List<GearController>(inputList);
+        List<GearController> temp = inputList;
         int[] usedIndices = new int[inputList.Count];
         for (int i = 0; i < inputList.Count; i++)
         {
@@ -80,16 +79,16 @@ public class GearSetter : EditorWindow
             while (!randoFlag)
             {
                 index = Random.Range(0, inputList.Count);
-                if (usedIndices[index] != 1)
+                if (usedIndices[index] != index)
                 {
                     randoFlag = true;
-                    usedIndices[index] = 1;
+                    usedIndices[index] = index;
                 }
             }
 
             temp[index] = inputList[i];
         }
 
-        return temp;
+        inputList = temp;
     }
 }

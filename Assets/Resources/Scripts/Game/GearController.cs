@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using Resources.Enums;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -62,12 +61,6 @@ public class GearController : MonoBehaviour
     {
         get => botR;
         set => botR = value;
-    }
-
-    public Color[] ColorTracker
-    {
-        get => colorTracker;
-        set => colorTracker = value;
     }
 
     private void Awake()
@@ -172,7 +165,7 @@ public class GearController : MonoBehaviour
                 output = Color.green;
                 break;
             case PossibleColor.Orange :
-                output = new Color32(0xFF,0x93,0x40, 0xff);
+                output = new Color32(0xF5,0xb3,0x42, 0xFF);
                 break;
             case PossibleColor.Pink :
                 output = new Color32(0xDE, 0x50, 0xD7, 0xFF);
