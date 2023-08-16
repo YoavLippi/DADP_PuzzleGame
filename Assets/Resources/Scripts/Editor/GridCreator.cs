@@ -88,11 +88,17 @@ public class GridCreator : EditorWindow
         bm.NodeDistance = scale;
         bm.PrefabScale = scale;
         bm.AllIntersections.Clear();
+        bm.AllTiles.Clear();
 
         foreach (var node in bm.GetComponentsInChildren<NodeValidator>())
         {
             node.NodeDistance = scale;
             bm.AllIntersections.Add(node);
+        }
+
+        foreach (var tile in bm.GetComponentsInChildren<TileHoldChecker>())
+        {
+            bm.AllTiles.Add(tile);
         }
     }
 
@@ -108,20 +114,14 @@ public class GridCreator : EditorWindow
         float incrementSize = 1f * scale;
         float posTrackX = -incrementSize*(columns-1)/2f, posTrackY = incrementSize*(rows-1)/2f, nodePosX = -incrementSize*columns/2f, nodePosY = incrementSize*rows/2;
         Vector2 parentPos = parent.transform.position;
-        bool black = false;
 
         BoardManager bm;
-        if (parent.GetComponent<BoardManager>())
-        {
-            bm = parent.GetComponent<BoardManager>();
-        }
-        else
-        {
-            bm = parent.AddComponent<BoardManager>();
-        }
+        bm = parent.GetComponent<BoardManager>() ? parent.GetComponent<BoardManager>() : parent.AddComponent<BoardManager>();
         bm.AllIntersections = new List<NodeValidator>();
+        bm.AllTiles = new List<TileHoldChecker>();
         bm.NodeDistance = incrementSize;
         bm.PrefabScale = scale;
+        
         
         for (int i = 0; i < rows; i++)
         {
@@ -143,16 +143,11 @@ public class GridCreator : EditorWindow
                 Object squareNode = Instantiate(UnityEngine.Resources.Load("Prefabs/TilePrefab"),
                     new Vector3(parentPos.x + posTrackX, parentPos.y + posTrackY), Quaternion.identity, parent.transform);
                 squareNode.GameObject().transform.localScale = new Vector3(scale,scale);
-                squareNode.GameObject().GetComponent<SpriteRenderer>().color = black ? Color.black : Color.white;
-                squareNode.AddComponent<TileHoldChecker>();
-                black = !black;
+                TileHoldChecker temp = squareNode.AddComponent<TileHoldChecker>();
+                bm.AllTiles.Add(temp);
                 posTrackX += incrementSize;
             }
-
-            if (columns % 2 == 0)
-            {
-                black = !black;
-            }
+            
             posTrackX = -incrementSize*(columns-1)/2f;
             nodePosX = -(incrementSize * columns) / 2f;
             posTrackY -= incrementSize;

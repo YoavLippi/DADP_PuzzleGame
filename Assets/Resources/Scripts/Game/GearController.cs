@@ -25,8 +25,14 @@ public class GearController : MonoBehaviour
     [SerializeField] private PossibleColor[] choiceTracker;
 
     private float scale;
-    
-    [SerializeField] private int rotateAmount;
+    private int rotateAmount;
+    private BoardManager thisBoardManager;
+
+    public BoardManager ThisBoardManager
+    {
+        get => thisBoardManager;
+        set => thisBoardManager = value;
+    }
 
     public int RotateAmount
     {
@@ -76,8 +82,10 @@ public class GearController : MonoBehaviour
         GameObject boardController = GameObject.FindWithTag("BoardController");
         if (boardController.GetComponent<BoardManager>())
         {
-            scale = boardController.GetComponent<BoardManager>().PrefabScale;
+            thisBoardManager = boardController.GetComponent<BoardManager>();
+            scale = thisBoardManager.PrefabScale;
             transform.localScale = transform.localScale * scale;
+            
         }
         
         colorTracker = new Color[]

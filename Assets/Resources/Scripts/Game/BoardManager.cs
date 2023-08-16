@@ -10,6 +10,13 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private float nodeDistance;
     [SerializeField] private float prefabScale;
     [SerializeField] private List<NodeValidator> allIntersections;
+    [SerializeField] private List<TileHoldChecker> allTiles;
+
+    public List<TileHoldChecker> AllTiles
+    {
+        get => allTiles;
+        set => allTiles = value;
+    }
 
     public List<NodeValidator> AllIntersections
     {
@@ -45,6 +52,19 @@ public class BoardManager : MonoBehaviour
         {
             Debug.Log("Incorrect solution");
         }
+    }
+
+    public bool CheckAllOccupied()
+    {
+        foreach (var tile in allTiles)
+        {
+            if (!tile.occupied)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private bool ValidateJunctions()

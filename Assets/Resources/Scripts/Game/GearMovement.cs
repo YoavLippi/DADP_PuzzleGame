@@ -45,24 +45,14 @@ public class GearMovement : MonoBehaviour
         {
             if (child.transform.name == "Circle")
             {
-                if (!movable && !rotatable)
-                {
-                    child.color = Color.black;
-                } else if (!movable && rotatable)
-                {
-                    child.color = Color.red;
-                }
-                else
-                {
-                    child.color = Color.white;
-                }
+                child.color = rotatable ? Color.white : Color.black;
             }
         }
     }
 
     private void OnMouseDown()
     {
-        Debug.Log($"{transform} was clicked");
+        //Debug.Log($"{transform} was clicked");
         initialPos = rb.position;
         if (movable)
         {
@@ -125,6 +115,14 @@ public class GearMovement : MonoBehaviour
             if (Time.time - timer <= 0.3f && Vector2.Distance(rb.position, initialPos) < 0.01f)
             {
                 attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x);   
+            }
+        }
+
+        if (movable || rotatable)
+        {
+            if (attachedController.ThisBoardManager.CheckAllOccupied())
+            {
+                attachedController.ThisBoardManager.EndLevel();
             }
         }
     }
