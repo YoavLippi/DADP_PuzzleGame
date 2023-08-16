@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 39536d6bf0a37ac478c383d29f89e421
+guid: 1b9d975d927b77a49a7d11ee248af6bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6834352848068525443
-    second: speech bubble_0
+      213: -4004862940541907909
+    second: StarSprite_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: speech bubble_0
+      name: StarSprite_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 21
-        width: 233
-        height: 159
+        x: 4
+        y: 11
+        width: 248
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d72423d6b408721a0800000000000000
-      internalID: -6834352848068525443
+      spriteID: b3c8fdecf5edb68c0800000000000000
+      internalID: -4004862940541907909
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      speech bubble_0: -6834352848068525443
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -17,6 +17,8 @@ public class GearMovement : MonoBehaviour
 
     private Vector2 initialPos;
 
+    private BoardManager bm;
+
     public bool Movable
     {
         get => movable;
@@ -33,6 +35,7 @@ public class GearMovement : MonoBehaviour
     {
         GetComponent<CompositeCollider2D>().layerOverridePriority = 10;
         rb = GetComponent<Rigidbody2D>();
+        bm = GameObject.FindWithTag("BoardController").GetComponent<BoardManager>();
         RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
             Mathf.Infinity, boardLayer);
         if (hit)
@@ -114,7 +117,8 @@ public class GearMovement : MonoBehaviour
         {
             if (Time.time - timer <= 0.3f && Vector2.Distance(rb.position, initialPos) < 0.01f)
             {
-                attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x);   
+                attachedController.RotateGear(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < rb.position.x); 
+                bm.IncrementCounter();
             }
         }
 

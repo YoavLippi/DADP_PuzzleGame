@@ -1,6 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,6 +10,8 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private float prefabScale;
     [SerializeField] private List<NodeValidator> allIntersections;
     [SerializeField] private List<TileHoldChecker> allTiles;
+    [SerializeField] private int moveCount;
+    [SerializeField] private TextMeshProUGUI moveCounter;
 
     public List<TileHoldChecker> AllTiles
     {
@@ -41,12 +42,20 @@ public class BoardManager : MonoBehaviour
         Random.InitState(42);
     }
 
+    public void IncrementCounter()
+    {
+        moveCount++;
+        moveCounter.text = $"Moves : {moveCount}";
+    }
+
     public void EndLevel()
     {
         if (ValidateJunctions())
         {
             //todo victory implementation
             Debug.Log("YOU WIN!!!");
+            Object victoryScreen = Instantiate(UnityEngine.Resources.Load("Prefabs/StarDisplay"), Vector3.zero,
+                Quaternion.identity);
         }
         else
         {
