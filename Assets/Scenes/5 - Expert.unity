@@ -282,8 +282,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -455,7 +455,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -598,6 +598,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &117802603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -890,8 +893,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -947,6 +950,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &162339754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1161,8 +1167,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1218,6 +1224,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &195917135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1432,7 +1441,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1605,7 +1614,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1662,6 +1671,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &233797947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1954,8 +1966,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2011,6 +2023,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &284130850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2109,6 +2124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &288228297
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2401,8 +2419,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2874,6 +2892,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &454090447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2972,6 +2993,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &454603484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3070,6 +3094,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &463222552
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3454,8 +3481,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3627,8 +3654,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3684,6 +3711,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &579344694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3782,6 +3812,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &586248089
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3978,6 +4011,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &620716560
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4248,6 +4284,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &689600118
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4540,8 +4579,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4707,6 +4746,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &753504404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4805,6 +4847,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &757438127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4903,6 +4948,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &767392379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5079,6 +5127,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &774565453
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5177,6 +5228,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &782413821
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5391,8 +5445,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5448,6 +5502,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &792228317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5624,6 +5681,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &887770932
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5838,8 +5898,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5895,6 +5955,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &916754383
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5993,6 +6056,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &918812372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6091,6 +6157,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &944910383
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6189,6 +6258,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &985652783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6287,6 +6359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &997454328
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6385,6 +6460,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 0
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1002063131
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6599,7 +6677,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6656,6 +6734,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1038719049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6870,8 +6951,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7083,6 +7164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1120709476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7181,6 +7265,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1135186282
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7395,7 +7482,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7452,6 +7539,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1203287009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7666,8 +7756,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7813,6 +7903,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1233510996
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8027,8 +8120,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8200,8 +8293,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8257,6 +8350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1341913213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8589,7 +8685,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8646,6 +8742,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1356054018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8822,6 +8921,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1378875340
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8920,6 +9022,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1386485831
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9212,7 +9317,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9385,8 +9490,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9442,6 +9547,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1437218790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9656,7 +9764,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9713,6 +9821,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1454249109
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10173,8 +10284,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10230,6 +10341,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 0
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1511233406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10444,8 +10558,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10579,6 +10693,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1548951690
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10793,8 +10910,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10966,7 +11083,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11023,6 +11140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1643828695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11121,6 +11241,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1646653312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11335,8 +11458,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11478,6 +11601,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1661350489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11692,8 +11818,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11827,6 +11953,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1762950178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12119,7 +12248,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12176,6 +12305,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1783828308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12274,6 +12406,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1790720930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12488,7 +12623,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12661,7 +12796,7 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12834,8 +12969,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12969,6 +13104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1924330832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13183,8 +13321,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13330,6 +13468,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1947925314
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13544,8 +13685,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13601,6 +13742,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 0
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1963309651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13863,6 +14007,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2000857933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14159,8 +14306,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14311,6 +14458,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeDistance: 1
   prefabScale: 1
+  allIntersections: []
+  allTiles: []
 --- !u!4 &2021052666
 Transform:
   m_ObjectHideFlags: 0
@@ -14672,8 +14821,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14811,6 +14960,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2083908462
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15025,8 +15177,8 @@ SpriteRenderer:
   m_SortingLayerID: -475070105
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b2547dadfa7062d44a8d57ea7338c449, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15082,6 +15234,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2086972669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15180,6 +15335,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 0
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2102703454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15347,6 +15505,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2111517276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15445,6 +15606,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 0
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2119300287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15625,6 +15789,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2128720313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15723,6 +15890,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 1
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2142046783
 SpriteRenderer:
   m_ObjectHideFlags: 0
