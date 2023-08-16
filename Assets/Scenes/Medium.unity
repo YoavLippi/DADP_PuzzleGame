@@ -5440,6 +5440,12 @@ MonoBehaviour:
   prefabScale: 1.3333334
   allIntersections: []
   allTiles: []
+  moveCount: 0
+  moveCounter: {fileID: 0}
+  levelNum: 0
+  threeStars: 0
+  twoStars: 0
+  oneStar: 0
 --- !u!1 &1159861536
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,6 +6588,12 @@ MonoBehaviour:
   - {fileID: 2080750459}
   - {fileID: 685558086}
   allTiles: []
+  moveCount: 0
+  moveCounter: {fileID: 0}
+  levelNum: 0
+  threeStars: 0
+  twoStars: 0
+  oneStar: 0
 --- !u!1 &1298349647
 GameObject:
   m_ObjectHideFlags: 0
