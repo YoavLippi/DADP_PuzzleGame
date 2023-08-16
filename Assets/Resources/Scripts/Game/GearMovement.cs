@@ -31,6 +31,7 @@ public class GearMovement : MonoBehaviour
 
     private void Awake()
     {
+        GetComponent<CompositeCollider2D>().layerOverridePriority = 10;
         rb = GetComponent<Rigidbody2D>();
         RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
             Mathf.Infinity, boardLayer);
@@ -61,6 +62,7 @@ public class GearMovement : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log($"{transform} was clicked");
         initialPos = rb.position;
         if (movable)
         {
