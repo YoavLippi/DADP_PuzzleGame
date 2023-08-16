@@ -19,6 +19,8 @@ public class GearMovement : MonoBehaviour
 
     private BoardManager bm;
 
+    private TileHoldChecker lastTile;
+
     public bool Movable
     {
         get => movable;
@@ -33,14 +35,15 @@ public class GearMovement : MonoBehaviour
 
     private void Awake()
     {
-        StartCoroutine(setPriorities());
+        //StartCoroutine(setPriorities());
         rb = GetComponent<Rigidbody2D>();
         bm = GameObject.FindWithTag("BoardController").GetComponent<BoardManager>();
         RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
             Mathf.Infinity, boardLayer);
         if (hit)
         {
-            hit.transform.GetComponent<TileHoldChecker>().occupied = true;
+            lastTile = hit.transform.GetComponent<TileHoldChecker>();
+            lastTile.occupied = true;
             rb.position = hit.transform.position;
         }
         
@@ -55,9 +58,9 @@ public class GearMovement : MonoBehaviour
 
     private IEnumerator setPriorities()
     {
-        GetComponent<CompositeCollider2D>().layerOverridePriority = 1;
-        yield return new WaitForSeconds(0.01f);
-        GetComponent<CompositeCollider2D>().layerOverridePriority = 10;
+        /*GetComponent<CompositeCollider2D>().layerOverridePriority = 1;*/
+        yield return new WaitForSeconds(0.1f);
+        /*GetComponent<CompositeCollider2D>().layerOverridePriority = 10;*/
     }
 
     private void OnMouseDown()
@@ -66,11 +69,18 @@ public class GearMovement : MonoBehaviour
         initialPos = rb.position;
         if (movable)
         {
+            if (lastTile)
+            {
+                lastTile.occupied = false;
+                lastTile.transform.GetComponent<Collider2D>().enabled = true;
+            }
             RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
                 Mathf.Infinity, boardLayer);
             if (hit)
             {
-                hit.transform.GetComponent<TileHoldChecker>().occupied = false;
+                lastTile = hit.transform.GetComponent<TileHoldChecker>();
+                lastTile.occupied = false;
+                lastTile.transform.GetComponent<Collider2D>().enabled = true;
             }
             offset = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - rb.position;
         }
@@ -106,6 +116,8 @@ public class GearMovement : MonoBehaviour
                 {
                     rb.position = hit.collider.transform.position;
                     hit.transform.GetComponent<TileHoldChecker>().occupied = true;
+                    lastTile = hit.transform.GetComponent<TileHoldChecker>();
+                    lastTile.transform.GetComponent<Collider2D>().enabled = false;
                 }
                 else
                 {
@@ -115,8 +127,13 @@ public class GearMovement : MonoBehaviour
                     if (returnHit)
                     {
                         returnHit.transform.GetComponent<TileHoldChecker>().occupied = true;
+                        lastTile.transform.GetComponent<Collider2D>().enabled = false;
                     }
                 }
+            }
+            else
+            {
+                lastTile = null;
             }
         }
 
