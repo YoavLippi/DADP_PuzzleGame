@@ -593,7 +593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099793264834101543, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
       propertyPath: movable
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099793264834101543, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
+      propertyPath: rotatable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7555150291637569325, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
       propertyPath: m_Name
@@ -2296,7 +2300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099793264834101543, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
       propertyPath: movable
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099793264834101543, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
+      propertyPath: rotatable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7555150291637569325, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
       propertyPath: m_Name
@@ -2734,7 +2742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099793264834101543, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
       propertyPath: movable
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099793264834101543, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
+      propertyPath: rotatable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7555150291637569325, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
       propertyPath: m_Name
@@ -2909,7 +2921,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099793264834101543, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
       propertyPath: movable
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099793264834101543, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
+      propertyPath: rotatable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7555150291637569325, guid: 05aa70f29519cc74d827311dcdb2630b, type: 3}
       propertyPath: m_Name
