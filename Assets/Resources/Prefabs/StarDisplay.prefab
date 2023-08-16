@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1986982946118589485}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3615124623152161233}
+        m_TargetAssemblyTypeName: LoadShopScene, Assembly-CSharp
+        m_MethodName: ReturnToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2424359295366272739
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +762,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f61222c2e557d40b68727a70848ed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  done0: 0
+  done01: 0
+  done012: 0
+  done0123: 0
+  done01234: 0
+  Level1Button: {fileID: 0}
+  Level2Button: {fileID: 0}
+  Level3Button: {fileID: 0}
+  Level4Button: {fileID: 0}
+  Level5Button: {fileID: 0}
 --- !u!1 &6540383735695709477
 GameObject:
   m_ObjectHideFlags: 0

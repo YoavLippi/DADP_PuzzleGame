@@ -13,6 +13,7 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private List<TileHoldChecker> allTiles;
     [SerializeField] private int moveCount;
     [SerializeField] private TextMeshProUGUI moveCounter;
+    [SerializeField] private int levelNum;
 
     public List<TileHoldChecker> AllTiles
     {
@@ -56,6 +57,7 @@ public class BoardManager : MonoBehaviour
             GameObject victoryScreen = Instantiate((GameObject)UnityEngine.Resources.Load("Prefabs/StarDisplay"), Vector3.zero,
                 Quaternion.identity);
             victoryScreen.GetComponent<VictoryScoreController>().ShowVictory(moveCount);
+            victoryScreen.GetComponent<LoadShopScene>().LevelDoneFlag = levelNum;
         }
     }
 

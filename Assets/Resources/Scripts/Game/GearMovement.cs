@@ -33,7 +33,7 @@ public class GearMovement : MonoBehaviour
 
     private void Awake()
     {
-        GetComponent<CompositeCollider2D>().layerOverridePriority = 10;
+        StartCoroutine(setPriorities());
         rb = GetComponent<Rigidbody2D>();
         bm = GameObject.FindWithTag("BoardController").GetComponent<BoardManager>();
         RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.zero,
@@ -51,6 +51,13 @@ public class GearMovement : MonoBehaviour
                 child.color = rotatable ? Color.white : Color.black;
             }
         }
+    }
+
+    private IEnumerator setPriorities()
+    {
+        GetComponent<CompositeCollider2D>().layerOverridePriority = 1;
+        yield return new WaitForSeconds(0.01f);
+        GetComponent<CompositeCollider2D>().layerOverridePriority = 10;
     }
 
     private void OnMouseDown()

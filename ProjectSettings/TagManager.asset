@@ -7,6 +7,7 @@ TagManager:
   - Gears
   - Board
   - BoardController
+  - FlagHandler
   layers:
   - Default
   - TransparentFX
