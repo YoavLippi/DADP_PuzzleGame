@@ -14,6 +14,16 @@ public class NodeValidator : MonoBehaviour
         get => nodeDistance;
         set => nodeDistance = value;
     }
+
+    private void Update()
+    {
+        Vector2[] rayPosArr = raycastPositions(transform.position);
+        Debug.DrawLine(rayPosArr[0], new Vector3(rayPosArr[0].x+0.2f,rayPosArr[0].y),Color.magenta);
+        Debug.DrawLine(rayPosArr[1], new Vector3(rayPosArr[1].x+0.2f,rayPosArr[1].y),Color.magenta);
+        Debug.DrawLine(rayPosArr[2], new Vector3(rayPosArr[2].x+0.2f,rayPosArr[2].y),Color.magenta);
+        Debug.DrawLine(rayPosArr[3], new Vector3(rayPosArr[3].x+0.2f,rayPosArr[3].y),Color.magenta);
+    }
+
     public bool ValidateJunction()
     {
         Vector2 nodePos = transform.position;

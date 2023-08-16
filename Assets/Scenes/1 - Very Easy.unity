@@ -171,6 +171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &11797492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -268,7 +271,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75c5ccfba1813e4eb82b5f3a61c26fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeDistance: 0
+  nodeDistance: 2.666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &85220228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -376,7 +382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75c5ccfba1813e4eb82b5f3a61c26fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeDistance: 0
+  nodeDistance: 2.666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &238407720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -474,7 +483,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75c5ccfba1813e4eb82b5f3a61c26fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeDistance: 0
+  nodeDistance: 2.666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &450350307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -823,6 +835,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &589038315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1099,6 +1114,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &905784658
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1182,6 +1200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
   prefabScale: 2.6666667
+  allIntersections: []
+  allTiles: []
 --- !u!4 &937925033
 Transform:
   m_ObjectHideFlags: 0
@@ -1268,6 +1288,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &952442485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1906,6 +1929,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &1249568574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2009,6 +2035,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &1285537933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2803,6 +2832,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &1569562260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2982,6 +3014,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &1606833380
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3157,6 +3192,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &1755849709
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3255,6 +3293,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &1759698515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3429,7 +3470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75c5ccfba1813e4eb82b5f3a61c26fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeDistance: 0
+  nodeDistance: 2.666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &1923094988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3701,6 +3745,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &2016298246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3972,6 +4019,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeDistance: 2.6666667
+  gearLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &2063329632
 SpriteRenderer:
   m_ObjectHideFlags: 0
