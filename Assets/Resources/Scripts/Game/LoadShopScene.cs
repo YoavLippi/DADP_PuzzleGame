@@ -1,9 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class LoadShopScene : MonoBehaviour
@@ -20,51 +20,14 @@ public class LoadShopScene : MonoBehaviour
     [SerializeField] private Button Level4Button;
     [SerializeField] private Button Level5Button;
 
-    private FlagHandler f;
+    [SerializeField] private TextMeshProUGUI txt;
 
     private int levelDoneFlag;
 
-    public int LevelDoneFlag
-    {
-        get => levelDoneFlag;
-        set => levelDoneFlag = value;
-    }
-
-    public void ViewTutorialScene()
-    {
-        SceneManager.LoadScene("Scenes/0 - Tutorial", LoadSceneMode.Single);
-    }
-    public void ViewLevelOneScene()
-    {
-        SceneManager.LoadScene("Scenes/1 - Very Easy", LoadSceneMode.Single);
-    }
-    public void ViewLevelTwoScene()
-    {
-        SceneManager.LoadScene("Scenes/2 - Easy", LoadSceneMode.Single);
-    }
-    public void ViewLevelThreeScene()
-    {
-        SceneManager.LoadScene("Scenes/3 - Medium", LoadSceneMode.Single);
-    }
-    public void ViewLevelFourScene()
-    {
-        SceneManager.LoadScene("Scenes/4 - Hard", LoadSceneMode.Single);
-    }
-    public void ViewLevelFiveScene()
-    {
-        SceneManager.LoadScene("Scenes/5 - Expert", LoadSceneMode.Single);
-    }
     private void Awake()
     {
-        if (!f)
-        {
-            f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
-            DontDestroyOnLoad(f.gameObject);
-        }
-    }
-
-    private void Start()
-    {
+        txt.text = "Enter";
+        FlagHandler f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
         if (this.gameObject.CompareTag("EditorOnly"))
         {
             done0 = f.clearFlags[0];
@@ -72,13 +35,13 @@ public class LoadShopScene : MonoBehaviour
             done012 = f.clearFlags[2];
             done0123 = f.clearFlags[3];
             done01234 = f.clearFlags[4];
-        
+
             Level1Button.gameObject.SetActive(false);
             Level2Button.gameObject.SetActive(false);
             Level4Button.gameObject.SetActive(false);
             Level3Button.gameObject.SetActive(false);
             Level5Button.gameObject.SetActive(false);
-        
+
             if (done0)
             {
                 Level1Button.gameObject.SetActive(true);
@@ -105,7 +68,38 @@ public class LoadShopScene : MonoBehaviour
             }
         }
     }
+    public int LevelDoneFlag
+    {
+        get => levelDoneFlag;
+        set => levelDoneFlag = value;
+    }
 
+    public void ViewTutorialScene()
+    {
+        SceneManager.LoadScene("Scenes/0 - Tutorial");
+    }
+    public void ViewLevelOneScene()
+    {
+        SceneManager.LoadScene("Scenes/1 - Very Easy");
+    }
+    public void ViewLevelTwoScene()
+    {
+        SceneManager.LoadScene("Scenes/2 - Easy");
+    }
+    public void ViewLevelThreeScene()
+    {
+        SceneManager.LoadScene("Scenes/3 - Medium");
+    }
+    public void ViewLevelFourScene()
+    {
+        SceneManager.LoadScene("Scenes/4 - Hard");
+    }
+    public void ViewLevelFiveScene()
+    {
+        SceneManager.LoadScene("Scenes/5 - Expert");
+    }
+   
+    
     public void ReturnToMenu()
     {
         if (GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>())

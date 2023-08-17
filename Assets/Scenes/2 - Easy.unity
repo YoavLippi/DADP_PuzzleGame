@@ -4830,9 +4830,9 @@ MonoBehaviour:
   moveCount: 0
   moveCounter: {fileID: 1685034454}
   levelNum: 2
-  threeStars: 1
-  twoStars: 2
-  oneStar: 3
+  threeStars: 20
+  twoStars: 25
+  oneStar: 30
 --- !u!1 &965336762
 GameObject:
   m_ObjectHideFlags: 0
