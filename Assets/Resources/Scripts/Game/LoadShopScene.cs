@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,8 @@ public class LoadShopScene : MonoBehaviour
     [SerializeField] private Button Level4Button;
     [SerializeField] private Button Level5Button;
 
+    private FlagHandler f;
+
     private int levelDoneFlag;
 
     public int LevelDoneFlag
@@ -29,31 +32,35 @@ public class LoadShopScene : MonoBehaviour
 
     public void ViewTutorialScene()
     {
-        SceneManager.LoadScene("Scenes/0 - Tutorial");
+        SceneManager.LoadScene("Scenes/0 - Tutorial", LoadSceneMode.Single);
     }
     public void ViewLevelOneScene()
     {
-        SceneManager.LoadScene("Scenes/1 - Very Easy");
+        SceneManager.LoadScene("Scenes/1 - Very Easy", LoadSceneMode.Single);
     }
     public void ViewLevelTwoScene()
     {
-        SceneManager.LoadScene("Scenes/2 - Easy");
+        SceneManager.LoadScene("Scenes/2 - Easy", LoadSceneMode.Single);
     }
     public void ViewLevelThreeScene()
     {
-        SceneManager.LoadScene("Scenes/3 - Medium");
+        SceneManager.LoadScene("Scenes/3 - Medium", LoadSceneMode.Single);
     }
     public void ViewLevelFourScene()
     {
-        SceneManager.LoadScene("Scenes/4 - Hard");
+        SceneManager.LoadScene("Scenes/4 - Hard", LoadSceneMode.Single);
     }
     public void ViewLevelFiveScene()
     {
-        SceneManager.LoadScene("Scenes/5 - Expert");
+        SceneManager.LoadScene("Scenes/5 - Expert", LoadSceneMode.Single);
     }
     private void Awake()
     {
-        FlagHandler f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
+        f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
+    }
+
+    private void Start()
+    {
         if (this.gameObject.CompareTag("EditorOnly"))
         {
             done0 = f.clearFlags[0];
@@ -94,7 +101,7 @@ public class LoadShopScene : MonoBehaviour
             }
         }
     }
-    
+
     public void ReturnToMenu()
     {
         if (GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>())

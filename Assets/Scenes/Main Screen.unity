@@ -757,16 +757,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2143305182}
-        m_TargetAssemblyTypeName: LoadShopScene, Assembly-CSharp
-        m_MethodName: ViewTutorialScene
-        m_Mode: 1
+      - m_Target: {fileID: 2143305183}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 0 - Tutorial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &616438955
@@ -936,7 +936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &749660905
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1001,16 +1001,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2143305182}
-        m_TargetAssemblyTypeName: LoadShopScene, Assembly-CSharp
-        m_MethodName: ViewLevelThreeScene
-        m_Mode: 1
+      - m_Target: {fileID: 2143305183}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 3 - Medium
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &749660907
@@ -1155,7 +1155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &931622639
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1220,16 +1220,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2143305182}
-        m_TargetAssemblyTypeName: LoadShopScene, Assembly-CSharp
-        m_MethodName: ViewLevelFourScene
-        m_Mode: 1
+      - m_Target: {fileID: 2143305183}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 4 - Hard
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &931622641
@@ -1288,7 +1288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &946017449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1353,16 +1353,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2143305182}
-        m_TargetAssemblyTypeName: LoadShopScene, Assembly-CSharp
-        m_MethodName: ViewLevelFiveScene
-        m_Mode: 1
+      - m_Target: {fileID: 2143305183}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 5 - Expert
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &946017451
@@ -1718,7 +1718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1329042675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1783,16 +1783,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2143305182}
-        m_TargetAssemblyTypeName: LoadShopScene, Assembly-CSharp
-        m_MethodName: ViewLevelOneScene
-        m_Mode: 1
+      - m_Target: {fileID: 2143305183}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 1 - Very Easy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1329042677
@@ -1930,7 +1930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1701360426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1995,16 +1995,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2143305182}
-        m_TargetAssemblyTypeName: LoadShopScene, Assembly-CSharp
-        m_MethodName: ViewLevelTwoScene
-        m_Mode: 1
+      - m_Target: {fileID: 2143305183}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 2 - Easy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1701360428
@@ -2218,6 +2218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2143305181}
   - component: {fileID: 2143305182}
+  - component: {fileID: 2143305183}
   m_Layer: 0
   m_Name: Scene Controller
   m_TagString: EditorOnly
@@ -2262,12 +2263,24 @@ MonoBehaviour:
   Level3Button: {fileID: 749660906}
   Level4Button: {fileID: 931622640}
   Level5Button: {fileID: 946017450}
+--- !u!114 &2143305183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143305180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d6292981c5e434cb7eb819b20c50fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 2143305181}
   - {fileID: 725929958}
   - {fileID: 404520669}
   - {fileID: 1115077037}
+  - {fileID: 2143305181}
