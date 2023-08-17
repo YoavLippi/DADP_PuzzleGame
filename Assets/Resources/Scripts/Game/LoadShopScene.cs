@@ -56,7 +56,11 @@ public class LoadShopScene : MonoBehaviour
     }
     private void Awake()
     {
-        f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
+        if (!f)
+        {
+            f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
+            DontDestroyOnLoad(f.gameObject);
+        }
     }
 
     private void Start()
