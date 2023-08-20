@@ -84,7 +84,7 @@ public class GearMovement : MonoBehaviour
             }
             else
             {
-                arrowPointer.transform.rotation = Quaternion.Euler(new Vector3(0,0,180));
+                arrowPointer.transform.rotation = Quaternion.Euler(new Vector3(0,180,0));
             }
         }
     }
