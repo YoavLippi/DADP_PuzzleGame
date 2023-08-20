@@ -61,7 +61,7 @@ public class LoadShopScene : MonoBehaviour
         if (GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>())
         {
             FlagHandler f = GameObject.FindWithTag("FlagHandler").GetComponent<FlagHandler>();
-            if (f.clearFlags.Length < levelDoneFlag)
+            if (f.clearFlags.Length > levelDoneFlag)
             {
                 f.clearFlags[levelDoneFlag] = true;
             }
