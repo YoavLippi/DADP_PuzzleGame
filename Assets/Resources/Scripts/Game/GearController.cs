@@ -168,14 +168,6 @@ public class GearController : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            RotateGear(false);
-        }
-    }
-
     public static Color DecodeColor(PossibleColor inputChoice)
     {
         Color output = Color.clear;
